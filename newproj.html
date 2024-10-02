@@ -615,3 +615,28 @@ background-color: none;
 <div id="rex"><img src="Rectangle 235.png" alt="Crystal Agate Phone Grip"></div> 
 </body>
 </html>
+
+    <script>
+        // Add event listener for 'Shop Now' button
+        document.getElementById("shop-now-btn").addEventListener("click", function() {
+            window.location.href = "#shop"; // Scroll to shop section
+        });
+
+        // Add event listener for 'About Us' button
+        document.getElementById("about-us-btn").addEventListener("click", function() {
+            alert("Welcome to the Pop Rock Crystal Shop! Here you can find amazing crystals and accessories.");
+        });
+
+        // Add event listeners for each 'Buy Now' button
+        const buyButtons = document.querySelectorAll('.buy-now');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Thank you for your purchase!');
+            });
+        });
+
+        // Add functionality to 'View All' button
+        document.querySelector('.view-all').addEventListener('click', function() {
+            alert('Displaying all products.');
+        });
+    </script>
